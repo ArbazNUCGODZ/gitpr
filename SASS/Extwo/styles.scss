@@ -1,0 +1,18 @@
+@use 'variables';
+@use 'mixins';
+@use 'base';
+
+.main{
+    text-align: center;
+    margin: variables.$spacing-unit * 4 0;
+    
+    .click{
+        @include mixins.button-style(variables.$primary-color, #fff);
+    }
+
+    
+    
+}
+.click2{
+    @include mixins.button-style(variables.$secondary-color, #fff);
+}

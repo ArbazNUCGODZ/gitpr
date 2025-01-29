@@ -1,0 +1,11 @@
+@use 'variables';
+@use 'mixins';
+@use 'base';
+
+
+.main {
+    text-align: center;
+    margin: variables.$spacing-unit * 4 0;
+  
+   
+  }

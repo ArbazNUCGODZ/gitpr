@@ -1,0 +1,47 @@
+@use 'variables' as *; // Import variables from _variables.scss
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+    font-family: $font-family; // Now uses the imported variable
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+
+}
+.main{
+    @extend %flex-center;
+    flex-direction: column;
+    background-color: $primary-color;
+    color: #fff;
+    padding: $spacing-unit * 2;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  
+    li {
+      margin: 0 $spacing-unit;
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .content {
+    @extend %flex-center;
+    background-color: $secondary-color;
+    color: #fff;
+    padding: $spacing-unit;
+  }

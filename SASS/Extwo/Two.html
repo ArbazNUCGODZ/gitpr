@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <nav>
+                <div class="navbar">
+                    <ul>
+                        <li ><a href="/">Home</a></li>
+                        <li >Source</li>
+                        <li >About Us</li>
+                        <li >Contact Us</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="content-left">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="content-right">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+             </div>
+             <button class="click">Click Me! </button>
+
+             <button class="click2">Click Me Twice!</button>
+    </div>
+    
+    <script>
+        const click = document.querySelector('.click');
+        const click2 = document.querySelector('.click2');
+        click.addEventListener('click', () => {
+            alert('You clicked me!');
+        });
+        click2.addEventListener('click', () => {
+            alert('You clicked me twice!');
+        });
+    </script>
+</body>
+
+</html>

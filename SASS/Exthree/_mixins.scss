@@ -1,0 +1,17 @@
+@use 'variables' as *; // Import variables from _variables.scss
+
+@mixin button-style($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $spacing-unit; // Now works
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+   // Now works
+
+  &:hover {
+    opacity: 0.8;
+    background-color: bisque;
+    color: black;
+  }
+}
